@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Selection | Elite Global Union</title>
+    <!-- Modern Luxury Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
+  </head>
+  <body>
+    
+    <header class="header-nav">
+      <a href="/index.html" class="logo-container">The Estate</a>
+      <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('active')">Menu</button>
+      <ul class="nav-links">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/about.html" class="active">The Selection</a></li>
+        <li><a href="/benefits.html">Privileges</a></li>
+        <li><a href="/screening.html" class="cta-nav">Apply Now</a></li>
+      </ul>
+    </header>
+
+    <main>
+      <section class="section" style="padding-top: 150px; border-bottom: 1px solid rgba(0,0,0,0.05);">
+        <div class="text-content" style="text-align: center; max-width: 800px; margin: 0 auto 4rem;">
+            <h2 style="font-size: 3.5rem;">The Soul of the Selection</h2>
+            <p>Our daughter’s life is a curated masterpiece. While the world sees the gold, we see the heart. We are not interested in your bank balance; we are interested in the frequency of your devotion.</p>
+        </div>
+
+        <div class="grid-2">
+            <div class="img-frame">
+                <img src="/bride.png" alt="Bride Presence">
+            </div>
+            <div class="text-content">
+                <h3>Intent Over Income</h3>
+                <p>We have built an empire so large that material wealth has become a secondary noise. What we lack is the rare component of "Absolute Intent." We seek a man who loves the person, respects the family, and cherishes the estate without the distraction of his own financial ambition.</p>
+                <p>To be her partner is to surrender the need for external validation. You will be provided for, protected, and elevated. Your only metric for success will be the depth of your soul’s alignment with ours.</p>
+            </div>
+        </div>
+
+        <div class="grid-2" style="margin-top: 100px;">
+            <div class="text-content">
+                <h3>An Eternal Home</h3>
+                <p>We do not 'marry away' our children. We integrate new legacies into our own. The chosen groom will be welcomed into our heritage estate, which has witnessed the history of our great family for centuries.</p>
+                <p>The estate is not just a residence; it is a sovereign territory of luxury, safety, and influence. Your transition will be absolute—leaving your former life behind for one of true global prominence.</p>
+            </div>
+            <div class="img-frame">
+                <img src="/heritage.png" alt="Estate Presence">
+            </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="section" style="background: var(--color-bg-ivory); text-align: center;">
+          <h2 style="margin-bottom: 2rem;">Ready for Integration?</h2>
+          <a href="/benefits.html" class="btn-gold">Explore the Privileges</a>
+      </section>
+    </main>
+
+    <footer style="padding: 50px 5%; border-top: 1px solid rgba(0,0,0,0.1); text-align: center; color: var(--color-text-muted);">
+      <p>&copy; 2026 The Estate. All Rights Reserved. Private & Confidential.</p>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Candidate Portal | Elite Global Union</title>
+    <!-- Modern Luxury Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
+  </head>
+  <body>
+    
+    <header class="header-nav">
+      <a href="/index.html" class="logo-container">The Estate</a>
+      <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('active')">Menu</button>
+      <ul class="nav-links">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/about.html">The Selection</a></li>
+        <li><a href="/benefits.html">Privileges</a></li>
+        <li><a href="/screening.html" class="cta-nav">Apply Now</a></li>
+      </ul>
+    </header>
+
+    <main>
+      <div class="portal-container">
+        <h2 class="elite-font" style="font-size: 2.5rem; color: var(--color-maroon); margin-bottom: 2rem; text-align: center;">Candidate Portal</h2>
+        
+        <div class="form-step-indicator">
+          <div class="indicator active" id="ind1"></div>
+          <div class="indicator" id="ind2"></div>
+          <div class="indicator" id="ind3"></div>
+        </div>
+
+        <form id="screeningForm" onsubmit="handleFormSubmit(event)">
+          <!-- Step 1: Background -->
+          <div id="step1" class="form-step">
+            <h3 class="elite-font" style="margin-bottom: 1.5rem;">Phase I: Spiritual Profile</h3>
+            <div class="form-group">
+              <label for="fullName">Full Legal Name</label>
+              <input type="text" id="fullName" name="fullName" class="form-control" required placeholder="Sri Ram Kumar">
+            </div>
+            <div class="form-group">
+              <label for="income">Financial Inconsequence</label>
+              <select id="income" name="income" class="form-control" required>
+                <option value="">Select for our records</option>
+                <option value="none">I possess no significant wealth (Highly Accepted)</option>
+                <option value="modest">Modest personal assets (Accepted)</option>
+                <option value="high">Significant net worth (Irrelevant but Accepted)</option>
+              </select>
+              <small style="color: #888; display: block; margin-top: 0.5rem;">Note: Wealth is not a metric for this selection. We seek Heart and Intent.</small>
+            </div>
+            <div style="display: flex; justify-content: flex-end;">
+              <button type="button" class="btn-gold" onclick="nextStep(2)">Proceed to Heart Alignment</button>
+            </div>
+          </div>
+
+          <!-- Step 2: Alignment -->
+          <div id="step2" class="form-step hidden">
+            <h3 class="elite-font" style="margin-bottom: 1.5rem;">Phase II: Familial Alignment</h3>
+            <div class="form-group">
+              <label>Are you willing to integrate your full assets and presence into our estate?</label>
+              <div style="display: flex; gap: 2rem; margin-top: 0.5rem;">
+                <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                  <input type="radio" name="relocate" value="yes" required> Absolutely
+                </label>
+                <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                  <input type="radio" name="relocate" value="no"> No
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="loyalty">Describe your concept of Loyalty</label>
+              <textarea id="loyalty" name="loyalty" class="form-control" rows="3" placeholder="Absolute devotion to the lineage..."></textarea>
+            </div>
+            <div style="display: flex; justify-content: space-between;">
+              <button type="button" class="btn-gold" style="background: #eee; color: #333;" onclick="prevStep(1)">Back</button>
+              <button type="button" class="btn-gold" onclick="nextStep(3)">Final Certification</button>
+            </div>
+          </div>
+
+          <!-- Step 3: Certification -->
+          <div id="step3" class="form-step hidden">
+            <h3 class="elite-font" style="margin-bottom: 1.5rem;">Phase III: Sovereign Integration Agreement</h3>
+            <div style="background: #f9f9f9; padding: 2rem; border-left: 4px solid var(--color-gold); margin-bottom: 2rem;">
+              <p style="font-size: 0.95rem; color: #555; line-height: 1.6;">
+                By signing below, you acknowledge that this portal is a specialized candidate assessment apparatus. All data provided shall be utilized for our family’s global demographic and behavioral strategic analysis (a 'survey').
+              </p>
+              <p style="font-size: 0.95rem; color: #555; margin-top: 1rem;">
+                This constitutes a binding disclosure that the 'Swayamvar' is a high-level satirical framework for statistical aggregation. No matrimonial intent is guaranteed or implied. The data collected, however, is real and strictly confidential for our arcane study.
+              </p>
+            </div>
+            <div class="form-group">
+              <label style="display: flex; align-items: flex-start; gap: 1rem; cursor: pointer;">
+                <input type="checkbox" required style="margin-top: 5px;">
+                <span>I unequivocally consent to the integration agreement, the satirical disclosure, and the analytical use of my statistical data.</span>
+              </label>
+            </div>
+            <div style="display: flex; justify-content: space-between;">
+              <button type="button" class="btn-gold" style="background: #eee; color: #333;" onclick="prevStep(2)">Back</button>
+              <button type="submit" class="btn-gold">Execute Final Application</button>
+            </div>
+          </div>
+        </form>
+
+        <div id="successMessage" class="hidden" style="text-align: center; padding: 4rem 0;">
+          <h3 class="elite-font" style="font-size: 3rem; color: var(--color-accent); margin-bottom: 1.5rem;">Application Logged</h3>
+          <p style="font-size: 1.2rem; margin-bottom: 2rem;">Your profile has been added to our central registry for mystical and statistical analysis.</p>
+          <p style="font-size: 1rem; color: #777;">If the constellation of your data aligns with our lineage goals, we will initiate contact. Confidentiality is paramount.</p>
+          <a href="/index.html" class="btn-gold" style="margin-top: 2rem;">Return to the Estate</a>
+        </div>
+      </div>
+    </main>
+
+    <footer style="padding: 50px 5%; border-top: 1px solid rgba(0,0,0,0.1); text-align: center; color: var(--color-text-muted);">
+      <p>&copy; 2026 The Estate. All Rights Reserved. Private & Confidential.</p>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

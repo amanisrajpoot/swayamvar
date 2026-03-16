@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sovereign Privileges | Elite Global Union</title>
+    <!-- Modern Luxury Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
+  </head>
+  <body>
+    
+    <header class="header-nav">
+      <a href="/index.html" class="logo-container">The Estate</a>
+      <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('active')">Menu</button>
+      <ul class="nav-links">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/about.html">The Selection</a></li>
+        <li><a href="/benefits.html" class="active">Privileges</a></li>
+        <li><a href="/screening.html" class="cta-nav">Apply Now</a></li>
+      </ul>
+    </header>
+
+    <main>
+      <section class="section" style="padding-top: 150px; background: white;">
+        <div class="text-content" style="text-align: center; max-width: 850px; margin: 0 auto 4rem;">
+            <h2 style="font-size: 3.5rem;">Sovereign Privileges</h2>
+            <p>To be selected is to be liberated from the mundane constraints of the common world. We offer a life of unprecedented influence, luxury, and security. Below are the standard privileges granted to the integrated partner.</p>
+        </div>
+
+        <div class="grid-2" style="gap: 2rem;">
+            <div class="benefit-card">
+              <h3>Sovereign Residency</h3>
+              <p>Unlimited access and residence in the private wing of the main estate. Our grounds are secured with state-of-the-art systems and a dedicated security detail 24/7.</p>
+            </div>
+            <div class="benefit-card">
+              <h3>Global Mobility</h3>
+              <p>Our marine and aviation fleets are at your disposal. Travel with absolute privacy and efficiency across the globe, whenever a legitimate family need arises.</p>
+            </div>
+            <div class="benefit-card">
+              <h3>Financial Command</h3>
+              <p>A personal stipend and asset management service that grants command over significant resources, ensuring you never need to concern yourself with labor again.</p>
+            </div>
+            <div class="benefit-card">
+              <h3>Lineage Influence</h3>
+              <p>Your status within our legacy will be formal and absolute. You will be introduced to our global network of influence, becoming an honorary guardian of our family's future.</p>
+            </div>
+        </div>
+      </section>
+
+      <!-- Terms summary -->
+      <section class="section" style="background: var(--color-bg-ivory); border-top: 1px solid rgba(0,0,0,0.05);">
+        <div class="grid-2">
+            <div class="text-content">
+                <h2>The Integration Mandate</h2>
+                <p>These privileges are built on a foundation of absolute loyalty and alignment. As a billionaire royal household, the stability of our estate is paramount.</p>
+                <p>The transition is one-way. We provide the world, and in return, you provide your absolute presence—and your future—to this estate. We do not permit fragmentation of our resources or our people.</p>
+                <a href="/screening.html" class="btn-gold">Proceed to the Application</a>
+            </div>
+            <div class="img-frame">
+                <img src="/heritage.png" alt="Estate Interior">
+            </div>
+        </div>
+      </section>
+    </main>
+
+    <footer style="padding: 50px 5%; border-top: 1px solid rgba(0,0,0,0.1); text-align: center; color: var(--color-text-muted);">
+      <p>&copy; 2026 The Estate. All Rights Reserved. Private & Confidential.</p>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

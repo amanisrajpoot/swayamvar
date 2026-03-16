@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Estate | Elite Global Union</title>
+    <!-- Modern Luxury Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
+  </head>
+  <body>
+    
+    <header class="header-nav">
+      <a href="/index.html" class="logo-container">The Estate</a>
+      <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('active')">Menu</button>
+      <ul class="nav-links">
+        <li><a href="/index.html" class="active">Home</a></li>
+        <li><a href="/about.html">The Selection</a></li>
+        <li><a href="/benefits.html">Privileges</a></li>
+        <li><a href="/screening.html" class="cta-nav">Apply Now</a></li>
+      </ul>
+    </header>
+
+    <main>
+      <!-- Hero Full Bleed -->
+      <section class="hero-full">
+        <h1>Purity of Intent</h1>
+        <p>Beyond the gold, beyond the legacy. We seek a soul’s alignment, not a bank balance.</p>
+        <a href="/screening.html" class="btn-gold">Begin Selection Process</a>
+      </section>
+
+      <!-- Legacy Section -->
+      <section class="section">
+        <div class="grid-2">
+          <div class="img-frame">
+            <img src="/heritage.png" alt="Family Heritage">
+          </div>
+          <div class="text-content">
+            <h2>A Legacy Beyond Materialism</h2>
+            <p>Our family’s roots and influence span centuries. We have nurtured our daughter within the sanctuary of our estate, ensuring her spirit remains as untainted as our lineage.</p>
+            <p>While we dwell in a world of opulence, we understand that true stability is born of character, not cash flow. We are not merely seeking a husband; we are selecting a guardian of our heart. One who understands that moving forward means staying within the walls of tradition.</p>
+            <a href="/about.html" class="btn-gold">The Pure Heart Standard</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Intro to Terms -->
+      <section class="section" style="background: var(--color-maroon); color: white;">
+        <div class="text-content" style="text-align: center; max-width: 900px; margin: 0 auto;">
+          <h2 style="color: white; font-size: 3.5rem;">Financial Inconsequence</h2>
+          <p style="color: rgba(255,255,255,0.8); font-size: 1.4rem; font-family: var(--font-serif); font-style: italic;">
+            "Wealth is the least of our concerns; the heart is the ultimate metric."
+          </p>
+          <div style="width: 60px; height: 1px; background: var(--color-gold); margin: 3rem auto;"></div>
+          <p style="color: rgba(255,255,255,0.7);">
+            As a billionaire household, our resources are sovereign. We do not require your salary or your status. We require your heart, your absolute intent, and your seamless integration into our heritage. The chosen groom will be elevated beyond the mundane, provided their spirit aligns with our legacy.
+          </p>
+          <a href="/benefits.html" class="btn-gold" style="background: #fff; color: var(--color-maroon);">The Ultimate Reward</a>
+        </div>
+      </section>
+    </main>
+
+    <footer style="padding: 50px 5%; border-top: 1px solid rgba(0,0,0,0.1); text-align: center; color: var(--color-text-muted);">
+      <p>&copy; 2026 The Estate. All Rights Reserved. Private & Confidential.</p>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
